@@ -15,11 +15,11 @@ function currentLine(arrayName) {
       newStringArray.push(arrayName[i] + ",");
     }
     return "The current line is: " + newStringArray.join(" ");
-  } else {
+    } else {
     return "The line is currently empty."
+    }
   }
-  }
-  
+
 
 function nowServing(arrayName) {
   if (arrayName.length > 0) {
