@@ -12,7 +12,7 @@ function currentLine(arrayName) {
   if (arrayName.length > 0) {
     for (var i=0; i<arrayName.length; i++) {
       newStringArray.push(i + 1 + ".");
-      newStringArray.push(arrayName[i] + ", ");
+      newStringArray.push(arrayName[i] + ",");
     }
     var lastElem = newStringArray[newStringArray.length - 1].slice(0, -2);
     newStringArray.pop();
