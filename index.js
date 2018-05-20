@@ -10,6 +10,9 @@ function takeANumber(arrayName, customerName) {
 function currentLine(arrayName) {
   var newStringArray = [];
   for (i=0; i<arrayName.length; i++) {
-    
+    newStringArray.push(i + 1 + ".");
+    newStringArray.push(arrayName[i]);
   }
+  return newStringArray;
 }
+
