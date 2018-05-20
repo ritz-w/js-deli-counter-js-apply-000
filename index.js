@@ -11,7 +11,7 @@ function currentLine(arrayName) {
   var newStringArray = [];
   for (var i=0; i<arrayName.length; i++) {
     newStringArray.push(i + 1 + ".");
-    newStringArray.push(arrayName[i]);
+    newStringArray.push(arrayName[i] + ",");
   }
   return "The current line is: " + newStringArray.join(" ");
 }
