@@ -17,7 +17,7 @@ function currentLine(arrayName) {
     var lastElem = newStringArray[newStringArray.length - 1].slice(0, -2);
     newStringArray.pop();
     newStringArray.push(lastElem);
-    return "The line is currently: " + newStringArray.join("");
+    return "The line is currently: " + newStringArray.join(" ");
     } else {
     return "The line is currently empty."
     }
