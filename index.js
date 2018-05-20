@@ -9,12 +9,17 @@ function takeANumber(arrayName, customerName) {
 
 function currentLine(arrayName) {
   var newStringArray = [];
-  for (var i=0; i<arrayName.length; i++) {
-    newStringArray.push(i + 1 + ".");
-    newStringArray.push(arrayName[i] + ",");
+  if (arrayName.length > 0) {
+    for (var i=0; i<arrayName.length; i++) {
+      newStringArray.push(i + 1 + ".");
+      newStringArray.push(arrayName[i] + ",");
+    }
+    return "The current line is: " + newStringArray.join(" ");
+  } else {
+    return "The line is currently empty."
   }
-  return "The current line is: " + newStringArray.join(" ");
-}
+  }
+  
 
 function nowServing(arrayName) {
   if (arrayName.length > 0) {
