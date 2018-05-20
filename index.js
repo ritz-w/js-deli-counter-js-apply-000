@@ -14,7 +14,7 @@ function currentLine(arrayName) {
       newStringArray.push(i + 1 + ".");
       newStringArray.push(arrayName[i] + ",");
     }
-    return "The current line is: " + newStringArray.join(" ");
+    return "The line is currently: " + newStringArray.join(" ");
     } else {
     return "The line is currently empty."
     }
