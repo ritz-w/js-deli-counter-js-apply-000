@@ -13,6 +13,14 @@ function currentLine(arrayName) {
     newStringArray.push(i + 1 + ".");
     newStringArray.push(arrayName[i]);
   }
-  return newStringArray;
+  return "The current line is: " + newStringArray.join(" ");
+}
+
+function nowServing(arrayName) {
+  if (arrayName.length > 0) {
+  return "Currently serving " + arrayName.shift() + ".";
+} else {
+  return "There is nobody waiting to be served!"
+  }
 }
 
