@@ -5,3 +5,11 @@ function takeANumber(arrayName, customerName) {
   var linePosition = arrayName.indexOf(customerName) + 1;
   return "Welcome " + customerName + ", you are number " + linePosition + " in line."
 }
+
+
+function currentLine(arrayName) {
+  var newStringArray = [];
+  for (i=0; i<arrayName.length; i++) {
+    
+  }
+}
